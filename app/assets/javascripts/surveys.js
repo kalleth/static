@@ -20,7 +20,16 @@
       template: TEMPLATE,
       frequency: 50,
     },
-    smallSurveys: [],
+    smallSurveys: [
+      {
+        url: '',
+        template: TEMPLATE,
+        analytics_code: '',
+        frequency: 0,
+        startTime: new Date("May 4, 2016").getTime(),
+        endTime: new Date("May 5, 2016 23:59:59").getTime()
+      }
+    ],
 
     init: function() {
       var activeSurvey = userSurveys.getActiveSurvey(userSurveys.defaultSurvey, userSurveys.smallSurveys);
